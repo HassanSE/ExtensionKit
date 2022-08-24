@@ -2,10 +2,9 @@ import XCTest
 @testable import ExtensionKit
 
 final class ExtensionKitTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ExtensionKit().text, "Hello, World!")
+    
+    func test_commaFormatting() {
+        let value = 1000
+        XCTAssertEqual(value.commaFormatted, "1,000")
     }
 }
