@@ -9,6 +9,8 @@ public struct ExtensionKit {
 }
 
 public extension Int {
+    
+    /// Convert an Int value to a comma formatted string. For example 1000 -> 1,000
     var commaFormatted: String? {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
